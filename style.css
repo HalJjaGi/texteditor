@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main_table {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#main_table tr{
+    width: 1000px;
+}
+
+#main_table tr td {
+    padding: 10px;
+}
+
+#main_table tr th {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#main_table textarea {
+    width: 100%;
+    resize: none;
+}
+
+#cursor {
+    visibility: visible;
+    content: '';
+    width: 0.5px;
+    height: 26px;
+    background: black;
+    display: inline-block;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.line {
+    font-size: 20px;
+    height: max-content;
+    text-align: left;
+    width: 1000px;
+}
+
+.line .wrap span {
+    display: inline-block;
+    line-height: 26px;
+    white-space: pre-wrap;
+}
+
+.line .wrap h1 {
+    display: inline-block;
+    line-height: 50px;
+    white-space: pre-wrap;
+}
+
+.line .wrap {
+    word-break: break-all;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#contextMenu {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: rgb(254, 254, 254);
+    border-radius: 3px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#contextMenu button {
+    font-size: 20px;
+    width: 90px;
+    height: 30px;
+    margin: 0 2px 0 2px;
+}
